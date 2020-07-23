@@ -23,7 +23,7 @@ As this implementation is a proof-of-concept, it has some limitations of synchro
 
 3. Interpreter config: **Before run jar project compiled by maven**, you need create user and a database with its names defined in _application.properties_ (file in java project resources folder). If you want change this names in _application.properties_ do it. By default, to Library model, you will set postgresql database name as test\_db and user admin\_test\_db.
 
-4. Model (**dmodel.json file**): the following models are to be described in the dmodel.json file. Each model must be run in different interpreter instances. Or if in the same instance, one at a time. Put dmodel.json file in /tmp folder (/tmp/dmodel.json). You can create your own model and changing the dmodel.json file.
+4. Model (**dmodel.json file**): the following models are to be described in the dmodel.json file. Each model must be run in different interpreter instances, simultaneously. Or if in the same instance, once at a time. Put dmodel.json file in /tmp folder (/tmp/dmodel.json). You can create your own model and changing the dmodel.json file.
 
 5. Service initialize: go to the project folder and run  command: **java -jar midd-0.0.1-SNAPSHOT.jar&**
 
