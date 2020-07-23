@@ -1,5 +1,5 @@
 # MIDD - An initial implementation
-This is a proof-of-concept of the *Metadata Interpretation Driven Development* (MIDD) methodology. For more information read the article (MIDD.pdf) posted in this repository.
+This is a proof-of-concept of the *Metadata Interpretation Driven Development* (MIDD) methodology. For more information read the article (MIDD_Resumo.pdf) posted in this repository.
 
 The objective of this project is to demonstrate the operation of a software construction methodology (MIDD) that allows the complete reuse of your code to meet the demands of persistence (we could do this with others software concerns, like security) for applications from the most different domains of information systems without any change in code, despite changing data requirements. 
 
