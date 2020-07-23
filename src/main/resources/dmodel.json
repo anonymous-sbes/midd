@@ -1,0 +1,76 @@
+{
+    "GoodAndService": {
+        "_classDef": {
+        },
+        "name": {
+            "type": "String",
+            "isUnique": false,
+            "isNullable": false,
+            "length": 12
+        }
+    },
+    "Book": {
+        "_classDef": {
+            "_extends": "GoodAndService",
+            "_specializationStrategy": "TablePerClass"
+        },
+        "isbn": {
+            "type": "String",
+            "isUnique": false,
+            "isNullable": true,
+            "length": 32
+        }
+    },
+    "Renter": {
+        "_classDef": {
+        },
+        "name": {
+            "type": "String",
+            "length": 128,
+            "isUnique": false,
+            "isNullable": false
+        },
+        "register": {
+            "type": "String",
+            "length": 64,
+            "isUnique": true,
+            "isNullable": false
+        }
+    },
+    "Student": {
+        "_classDef": {
+            "_extends": "Renter",
+            "_specializationStrategy": "TablePerClass"
+        },
+        "birthdate": {
+            "type": "Date",
+            "isUnique": false,
+            "isNullable": false
+        }
+    },
+    "Rental": {
+        "_classDef": {
+            "_uniqueTuple":  [ "student", "book", "start" ]
+        },
+        "student": {
+            "type": "Student",
+            "isUnique": false,
+            "isNullable": false
+        },
+        "book": {
+            "type": "Book",
+            "isUnique": false,
+            "isNullable": false
+        },
+        "start": {
+            "type": "Date",
+            "isUnique": false,
+            "isNullable": false
+        },
+        "finish": {
+            "type": "Date",
+            "isUnique": false,
+            "isNullable": true
+        }
+    }
+}
